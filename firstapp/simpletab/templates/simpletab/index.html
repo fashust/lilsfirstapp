@@ -1,0 +1,9 @@
+{% if table_list %}
+    <ul>
+    {% for table in table_list %}
+        <li><a href="/simpletab/{{ simpletab_id }}/">{{ table.text_field }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
